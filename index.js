@@ -55,7 +55,7 @@ else{
             res.send('Hello World!');
         });
 
-        app.post('/set', function (req, res) {
+        app.post('/map/set', function (req, res) {
             //获取type参数
             var type = req.query.type;
             var key = req.query.key;
@@ -86,7 +86,7 @@ else{
             });
         });
 
-        app.get('/get', async function (req, res) {
+        app.get('/map/get', async function (req, res) {
             //获取type参数
             var type = req.query.type;
             var key = req.query.key;
@@ -107,7 +107,7 @@ else{
             }
         });
 
-        app.get('/del', async function (req, res) {
+        app.get('/map/del', async function (req, res) {
             //获取type参数
             var type = req.query.type;
             var key = req.query.key;
@@ -127,7 +127,7 @@ else{
             }
         });
 
-        app.get('/has', async function (req, res) {
+        app.get('/map/has', async function (req, res) {
             //获取type参数
             var type = req.query.type;
             var key = req.query.key;
@@ -147,7 +147,7 @@ else{
             }
         });
 
-        app.get('/size', async function (req, res) {
+        app.get('/map/size', async function (req, res) {
             //获取type参数
             var type = req.query.type;
             try{
