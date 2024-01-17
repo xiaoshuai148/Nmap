@@ -78,10 +78,10 @@ else{
                     },{
                         upsert: true
                     });
-                    res.status(200).send('ok');
+                    res.status(200).send('');
                 }
                 catch(e){
-                    res.status(400).send('error');
+                    res.status(400).send('');
                 }
             });
         });
@@ -99,11 +99,11 @@ else{
                     res.status(200).send(result.content);
                 }
                 else{
-                    res.status(400).send('error');
+                    res.status(400).send('');
                 }
             }
             catch(e){
-                res.status(400).send('error');
+                res.status(400).send('');
             }
         });
 
@@ -117,13 +117,13 @@ else{
                     key: key
                 });
                 if(result.deletedCount==1){
-                    res.status(200).send('ok');
+                    res.status(200).send('');
                 }else{
-                    res.status(400).send('error');
+                    res.status(400).send('');
                 }
             }
             catch(e){
-                res.status(400).send('error');
+                res.status(400).send('');
             }
         });
 
@@ -137,13 +137,13 @@ else{
                     key: key
                 });
                 if(result==1){
-                    res.status(200).send('ok');
+                    res.status(200).send('');
                 }else{
-                    res.status(400).send('error');
+                    res.status(400).send('');
                 }
             }
             catch(e){
-                res.status(400).send('error');
+                res.status(400).send('');
             }
         });
 
@@ -157,7 +157,7 @@ else{
                 res.status(200).send(result.toString());
             }
             catch(e){
-                res.status(400).send('error');
+                res.status(400).send('');
             }
         });
 
